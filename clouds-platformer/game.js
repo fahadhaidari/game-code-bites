@@ -150,7 +150,7 @@ const Game = (function() {
       } else {
         _hero.w = 20;
         _hero.h = 30;
-        _hero.color = "#EEE";
+        _hero.color = "#333";
         _hero.noImage = true;
       }
       _hero.vel = { x: 0, y: 0 };
