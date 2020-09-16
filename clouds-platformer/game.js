@@ -69,7 +69,6 @@ const Game = (function() {
 
   const render = function() {
     context.clearRect(0, 0, canvas.width, canvas.height);
-
     clouds.forEach(c => {
       renderQuad(c.x, c.y, c.w, c.h, c.color);
     });
@@ -145,8 +144,11 @@ const Game = (function() {
         _hero.img = new Image();
         _hero.img.src = _hero.imgSrc;
         _hero.noImage = false;
-        _hero.w = _hero.img.width * 0.7;
-        _hero.h = _hero.img.height * 0.7;
+
+        _hero.img.onload = function() {
+          _hero.w = _hero.img.width * 0.7;
+          _hero.h = _hero.img.height * 0.7;
+        }
       } else {
         _hero.w = 20;
         _hero.h = 30;
