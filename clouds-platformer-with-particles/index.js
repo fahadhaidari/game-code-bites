@@ -1,0 +1,10 @@
+Game.init(320, 480, "#EEE");
+Game.addHero( { x: 100, y: 200, imgSrc: "hero.png" } );
+Game.addCloud(30, 380, 40, 10, "orange");
+Game.addCloud(200, 350, 40, 10, "cyan");
+Game.addCloud(100, 260, 40, 10, "red");
+Game.addCloud(230, 180, 40, 10, "green");
+Game.addCloud(130, 100, 40, 10, "#4488FF");
+Game.addCloud(0, Game.world.h() - 20, Game.world.w(), 20, "teal");
+Game.enableParticles(300);
+Game.start();
