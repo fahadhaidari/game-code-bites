@@ -1,0 +1,11 @@
+html, body {
+  background: #111;
+}
+
+canvas {
+  background: #EEE;
+  display: block;
+  margin: 0 auto;
+  border: solid 6px #AAA;
+  border-radius: 10px;
+}
